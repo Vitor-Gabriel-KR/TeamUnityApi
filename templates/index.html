@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de Funcionário</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Dados Pessoais</h2>
+        <ul>
+            <li>Nome Completo: {{ funcionario.nome_completo }}</li>
+            <li>Data de Nascimento: {{ funcionario.data_nascimento }}</li>
+            <li>CPF: {{ funcionario.cpf }}</li>
+            <li>RG: {{ funcionario.rg }}</li>
+            <li>Estado Civil: {{ funcionario.estado_civil }}</li>
+            <li>Dependentes: {{ funcionario.dependentes }}</li>
+            <li>Informações Fiscais: {{ funcionario.informacoes_fiscais }}</li>
+            <li>Foto: <img src="{{ funcionario.foto.url }}" alt="Foto do Funcionário"></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Cargo e Salário</h2>
+        <ul>
+            <li>Cargo: {{ funcionario.cargo }}</li>
+            <li>Salário: {{ funcionario.salario }}</li>
+            <li>Data de Início: {{ funcionario.data_inicio_profissao }}</li>
+            <li>Data de Término: {{ funcionario.data_termino_profissao }}</li>
+            <li>Trabalhando em: {{ funcionario.trabalhando_em }}</li>
+            <li>Horário de Trabalho (Início): {{ funcionario.horario_de_trabalho_inicio }}</li>
+            <li>Horário de Trabalho (Fim): {{ funcionario.horario_de_trabalho_fim }}</li>
+            <li>Intervalo: {{ funcionario.intervalo }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Contato</h2>
+        <ul>
+            <li>Telefone: {{ funcionario.telefone }}</li>
+            <li>Email: {{ funcionario.email }}</li>
+            <li>Endereço Residencial: {{ funcionario.endereco_residencial }}</li>
+            <li>Número da Casa: {{ funcionario.numero_casa }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Documentação</h2>
+        <ul>
+            <li>Documento de Identidade: {{ funcionario.documento_identidade }}</li>
+            <li>Carteira de Trabalho: <a href="{{ funcionario.carteira_trabalho.url }}">Anexo</a></li>
+            <li>Passaporte: {{ funcionario.passaporte }}</li>
+            <li>Comprovante de Residência: {{ funcionario.comprovante_residencia }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Informações Pessoais</h2>
+        <ul>
+            <li>Formação Acadêmica: {{ funcionario.formacao_academica }}</li>
+            <li>Histórico Profissional: {{ funcionario.historico_profissional }}</li>
+            <li>Número da Conta Bancária: {{ funcionario.numero_conta_bancaria }}</li>
+            <li>Agência Bancária: {{ funcionario.agencia_bancaria }}</li>
+            <li>Banco: {{ funcionario.banco }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Informações de Saúde e Segurança</h2>
+        <ul>
+            <li>Alergias: {{ funcionario.alergias }}</li>
+            <li>Condições Médicas: {{ funcionario.condicoes_medicas }}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Contato de Emergência</h2>
+        <ul>
+            <li>Nome do Contato de Emergência: {{ funcionario.contato_emergencia_nome }}</li>
+            <li>Relação com o Contato: {{ funcionario.contato_emergencia_relacao }}</li>
+            <li>Telefone do Contato de Emergência: {{ funcionario.contato_emergencia_telefone }}</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -12,17 +12,25 @@
 </head>
 <body>
     <div>
-        <h2>Dados Pessoais</h2>
+        <h2 class="titulo" >Dados Pessoais</h2>
         <ul>
-            <li>Nome Completo: {{ funcionario.nome_completo }}</li>
-            <li>Data de Nascimento: {{ funcionario.data_nascimento }}</li>
-            <li>CPF: {{ funcionario.cpf }}</li>
-            <li>RG: {{ funcionario.rg }}</li>
-            <li>Estado Civil: {{ funcionario.estado_civil }}</li>
-            <li>Dependentes: {{ funcionario.dependentes }}</li>
-            <li>Informações Fiscais: {{ funcionario.informacoes_fiscais }}</li>
-            <li>Foto: <img src="{{ funcionario.foto.url }}" alt="Foto do Funcionário"></li>
+            <li class="text-field">Nome Completo: {{ funcionario.nome_completo }}</li>
+            <li class="text-field">Data de Nascimento: {{ funcionario.data_nascimento }}</li>
+            <li class="text-field">CPF: {{ funcionario.cpf }}</li>
+            <li class="text-field">RG: {{ funcionario.rg }}</li>
+            <li class="text-field">Estado Civil: {{ funcionario.estado_civil }}</li>
+            <li class="text-field">Dependentes: {{ funcionario.dependentes }}</li>
+            <li class="text-field">Informações Fiscais: {{ funcionario.informacoes_fiscais }}</li>
+            <li class="text-field">Foto: <img src="{{ funcionario.foto }}" alt="Foto do Funcionário"></li>
         </ul>
+        <li class="text-field">Nome Completo:</li>
+        <li class="text-field">Data de Nascimento: </li>
+        <li class="text-field">CPF: </li>
+        <li class="text-field">RG: </li>
+        <li class="text-field">Estado Civil: </li>
+        <li class="text-field">Dependentes: </li>
+        <li class="text-field">Informações Fiscais: </li>
+        <li class="text-field">Foto: <img src="" alt="Foto do Funcionário"></li>
     </div>
 
     <div>

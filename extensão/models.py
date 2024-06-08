@@ -34,7 +34,7 @@ class Funcionario(models.Model):
     numero_casa = models.CharField(max_length=10)
     carteira_de_trabalho = models.CharField(max_length=20)
     passaporte = models.CharField(max_length=20)
-    alegias = models.CharField(max_length=255)
+    alergias = models.CharField(max_length=255)
     condicoes_medicas = models.CharField(max_length=255)
     cargo = models.CharField(max_length=100)
     salario = models.DecimalField(max_digits=10, decimal_places=2)

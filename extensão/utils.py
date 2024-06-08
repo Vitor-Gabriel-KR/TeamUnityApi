@@ -1,7 +1,6 @@
 from extensão.models import Funcionario
 
 def criar_funcionario(dados_essenciais, dados_opcionais=None):
-    # Cria um novo funcionário com dados essenciais
     novo_funcionario = Funcionario.objects.create(
         nome_completo=dados_essenciais['nome_completo'],
         data_nascimento=dados_essenciais['data_nascimento'],
